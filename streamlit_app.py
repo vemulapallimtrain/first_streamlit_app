@@ -58,7 +58,8 @@ streamlit.header("The fuit load list contains:")
 def get_fruit_load_list():
   my_cur = my_cnx.cursor()
   my_cur.execute("SELECT * from fruit_load_list")
-  retrun my_cur.fetchall()
+  f_all = my_cur.fetchall() 
+  retrun f_all
 
 
 #Add a button to load the fruit
