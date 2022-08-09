@@ -2,7 +2,7 @@ import streamlit
 import pandas
 import requests
 import snowflake.connector
-from urllib.error import URLError ##Is case snsitive
+from urllib.error import URLError #Is case snsitive
 
 streamlit.title("My Parents New Healthy Diner")
 
@@ -32,7 +32,7 @@ try:
   if not fruit_choice:
       streamlit.error("Please select a fruit to get information.")
   else: 
-      #streamlit.write('The user entered ', fruit_choice)
+      streamlit.write('The user entered ', fruit_choice)
       fruityvice_response=requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
       #streamlit.text(fruityvice_response.json()) #Just writes the JSON data to the screen
       #Take the JSON version of the response and normalize it. 
