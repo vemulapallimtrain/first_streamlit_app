@@ -46,7 +46,7 @@ try:
       #Output the normalized data to the screen as table
       #streamlit.dataframe(fruityvice_normalized)
       back_from_function = get_fruityvise_data(fruit_choice)
-       streamlit.dataframe(back_from_function)
+      streamlit.dataframe(back_from_function)
 except urlerror as e:
     streamlit.error()
 
